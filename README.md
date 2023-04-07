@@ -1,2 +1,10 @@
 # blog-nodejs
-Блог новостей на nodуjs с использование БД mongodb  
+Блог новостей на nodejs с использование БД mongodb  
+
+
+## Установка
+```
+1. npm install
+2. В папке config в файле default.json в параметре uri прописать ссылку на базу данных mongodb
+
+```
