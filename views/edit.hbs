@@ -1,0 +1,18 @@
+{{#if post}}
+  <form id="post-form" method="POST" action="/edit/{{post._id}}?_method=PUT">
+    <div class="form-text">
+      <label>Post Title
+        <input type="text" name="name" value="{{post.name}}" />
+      </label>
+
+    </div>
+    <div class="form-text">
+      <label>Post Text
+        <textarea name="text">{{post.text}}</textarea>
+      </label>
+    </div>
+    <div class="form-button">
+      <input type="submit" value="Submit" />
+    </div>
+  </form>
+{{/if}}

@@ -1,0 +1,24 @@
+<form id="contact-form" method="POST" action="/register">
+  <div class="form-text">
+    <label>Email
+      <input type="email" name="email" required />
+    </label>
+  </div>
+  <div class="form-text">
+    <label>Password
+      <input type="password" name="password" />
+    </label>
+  </div>
+  <div class="form-text">
+    <label>Repeat Password
+      <input type="password" name="repeatPassword" />
+    </label>
+  </div>
+  <div class="form-button">
+    <input type="submit" value="Submit" />
+  </div>
+  <a href="/login">Login</a>
+</form>
+{{#if error}}
+  <div>{{error}}</div>
+{{/if}}

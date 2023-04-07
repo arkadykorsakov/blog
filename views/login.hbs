@@ -1,0 +1,19 @@
+<form id="contact-form" method="POST" action="/login">
+  <div class="form-text">
+    <label>Email
+      <input type="email" name="email" />
+    </label>
+  </div>
+  <div class="form-text">
+    <label>Password
+      <input type="password" name="password" />
+    </label>
+  </div>
+  <div class="form-button">
+    <input type="submit" value="Submit" />
+  </div>
+</form>
+<a href="/register">Registration</a>
+{{#if error}}
+  <div>{{error}}</div>
+{{/if}}
